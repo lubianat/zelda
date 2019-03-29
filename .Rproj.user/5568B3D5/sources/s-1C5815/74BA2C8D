@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1553893452345.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "74BA2C8D",
+    "lastKnownWriteTime" : 1553895621,
+    "last_content_update" : 1553895621569,
+    "path" : "~/Documents/Projects/main/zelda/R/bipartplot.R",
+    "project_path" : "R/bipartplot.R",
+    "properties" : {
+        "cursorPosition" : "4,13",
+        "scrollLine" : "4"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

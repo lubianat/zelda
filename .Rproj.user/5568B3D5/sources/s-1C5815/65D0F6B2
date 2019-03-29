@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1553894009240.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1057949812",
+    "id" : "65D0F6B2",
+    "lastKnownWriteTime" : 1553894344,
+    "last_content_update" : 1553894344366,
+    "path" : "~/Documents/Projects/main/zelda/receptor_ligand_dataset_preparation.R",
+    "project_path" : "receptor_ligand_dataset_preparation.R",
+    "properties" : {
+        "cursorPosition" : "8,64",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

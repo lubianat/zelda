@@ -1,0 +1,26 @@
+# This code is meant to make bridges
+# Tiago Lubiana - 18/09/2018
+
+library(data.table)
+
+## load data ------
+bridges <- fread('int/data/receptor_ligand_bridges.csv')
+
+load('int/data/GSE110226_ALZxCTR_limma_DEGS.RData')
+load('int/data/GSE61490_PERIODONTITISxCTRl_BioJupies_DEGS_TOP_1000.RData')
+neuro_degs <- unique(GSE110226_ALZxCTR_limma_DEGS$Gene.symbol)
+immune_degs <- unique(GSE61490_PERIODONTITISxCTRl_BioJupies_DEGS_TOP_1000$gene_symbol)
+
+
+ligands <- bridges$Ligand.ApprovedSymbol
+receptors <- bridges$Receptor.ApprovedSymbol
+
+# check if there are degs that are receptors or ligands
+#table(neuro_degs %in% receptors) 
+#table(immune_degs %in% ligands)
+
+neuro_immune_links <- bridges %>%
+  filter(Receptor.ApprovedSymbol %in% neuro_degs & Ligand.ApprovedSymbol %in% immune_degs )
+
+GSE61490_to_GSE110226_links <- neuro_immune_links
+save(GSE61490_to_GSE110226_links, file = "./int/GSE61490_to_GSE110226_links.RData")

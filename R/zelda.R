@@ -1,0 +1,50 @@
+
+#' zelda
+#'
+#' Takes two lists of genes and finds the receptor-ligand relations (links) between them.
+#' Plots a bipartite plot of the found genes.
+#' Returns a bipartite network of the connections.
+#'
+#' @param receptors A list of genes containing putative receptors
+#' @param ligands A list of genes containg putative ligands
+#' @param return_ggplot Flag to return a ggplot2 object instead of plotting. Defaults to FALSE.
+#' @param plot_it Flag to plot bipartite network or not. Defaults to TRUE.
+#' @param return_links Flag to return a dataframe with the links object instead of plotting. Defaults to FALSE.
+#' @import dplyr
+#' @import ggnetwork
+#' @import igraph
+#' @import GGally
+#' @import network
+#' @import ggplot2
+#' @export
+
+
+zelda <- function(receptors, ligands, return_ggplot = FALSE, plot_it = TRUE, return_links = FALSE){
+  if (return_ggplot == TRUE & return_links == TRUE ){
+    stop("You have to choose either return_ggplot or return_links to be true, but not both")
+  }
+
+  if (return_ggplot == FALSE & return_links == FALSE & plot_it == FALSE){
+    stop("This function is doing nothing. Maybe you should set something to TRUE.")
+  }
+
+  data(ramilowski_links)
+  receptors <- unique(receptors)
+  ligands <- unique(ligands)
+  links <- ramilowski_links %>%
+    filter(Receptor.ApprovedSymbol %in% receptors & Ligand.ApprovedSymbol %in% ligands )
+  edgelist <- as.matrix(links[,c("Ligand.ApprovedSymbol", "Receptor.ApprovedSymbol")])
+  if (plot_it == TRUE){
+    bipartplot(edgelist, return_ggplot = FALSE)
+  }
+  if (return_ggplot == TRUE){
+    return(bipartplot(edgelist, return_ggplot = TRUE))
+  }
+  if (return_links == TRUE){
+    edgelist <- as.data.frame(edgelist)
+    colnames(edgelist) <-c('receptors', 'ligands')
+    return(edgelist)
+  }
+
+
+}

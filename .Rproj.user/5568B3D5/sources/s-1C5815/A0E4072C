@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1553893976938.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1754584120",
+    "id" : "A0E4072C",
+    "lastKnownWriteTime" : 1553894511,
+    "last_content_update" : 1553894512004,
+    "path" : "~/Documents/Projects/main/zelda/R/datasets.R",
+    "project_path" : "R/datasets.R",
+    "properties" : {
+        "cursorPosition" : "8,9",
+        "scrollLine" : "0",
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
