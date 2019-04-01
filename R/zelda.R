@@ -34,6 +34,11 @@ zelda <- function(receptors, ligands, return_ggplot = FALSE, plot_it = TRUE, ret
   ligands <- unique(ligands)
   links <- ramilowski_links %>%
     filter(Receptor.ApprovedSymbol %in% receptors & Ligand.ApprovedSymbol %in% ligands )
+  if(nrow(links)<1){
+    message('No links were found')
+    return(NULL)
+  }
+
   edgelist <- as.matrix(links[,c("Ligand.ApprovedSymbol", "Receptor.ApprovedSymbol")])
   if (plot_it == TRUE){
     bipartplot(edgelist, return_ggplot = FALSE)

@@ -1,7 +1,3 @@
-# this code is a function to plot a bipartite plot from an edgelist
-library(igraph)
-library(ggnetwork)
-
 #' bipartplot
 #'
 #' Takes an edge list (from a bipartite network)

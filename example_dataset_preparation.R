@@ -3,4 +3,4 @@ degs_periodontitis <- GSE61490_PERIODONTITISxCTRl_BioJupies_DEGS_TOP_1000$gene_s
 
 degs <- list(degs_alzheimer = degs_alzheimer, degs_periodontitis = degs_periodontitis)
 
-save(degs, './data/degs.RData')
+save(degs, file = './data/degs.RData')
