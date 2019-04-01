@@ -8,3 +8,94 @@ mv: cannot move '../bridgednets/int/data/receptor_ligand_bridges.csv' to './data
 ]0;lubianat@csbl-tiago:~/Documents/Projects/main/zelda]7;file://csbl-tiago/home/lubianat/Documents/Projects/main/zelda]0;lubianat@csbl-tiago: ~/Documents/Projects/main/zelda[01;32mlubianat@csbl-tiago[00m:[01;34m~/Documents/Projects/main/zelda[00m$ [K]0;lubianat@csbl-tiago: ~/Documents/Projects/main/zelda[01;32mlubianat@csbl-tiago[00m:[01;34m~/Documents/Projects/main/zelda[00m$ [K]0;lubianat@csbl-tiago: ~/Documents/Projects/main/zelda[01;32mlubianat@csbl-tiago[00m:[01;34m~/Documents/Projects/main/zelda[00m$ GIT [K[K[K[Kgit init
 Initialized empty Git repository in /home/lubianat/Documents/Projects/main/zelda/.git/
 ]0;lubianat@csbl-tiago:~/Documents/Projects/main/zelda]7;file://csbl-tiago/home/lubianat/Documents/Projects/main/zelda]0;lubianat@csbl-tiago: ~/Documents/Projects/main/zelda[01;32mlubianat@csbl-tiago[00m:[01;34m~/Documents/Projects/main/zelda[00m$ git add .
+]0;lubianat@csbl-tiago:~/Documents/Projects/main/zelda]7;file://csbl-tiago/home/lubianat/Documents/Projects/main/zelda]0;lubianat@csbl-tiago: ~/Documents/Projects/main/zelda[01;32mlubianat@csbl-tiago[00m:[01;34m~/Documents/Projects/main/zelda[00m$ git mo[K[Kcommit - m [K[K[KM [Km[K[Km 'Fis[Krst Commit'[K[K[K[K[K[K[Kcommit'
+[master (root-commit) 70d6588] First commit
+ 55 files changed, 3588 insertions(+)
+ create mode 100644 .Rbuildignore
+ create mode 100644 .Rproj.user/5568B3D5/console06/2128639B
+ create mode 100644 .Rproj.user/5568B3D5/console06/2128639B.env
+ create mode 100644 .Rproj.user/5568B3D5/console06/INDEX001
+ create mode 100644 .Rproj.user/5568B3D5/sources/prop/1C43D209
+ create mode 100644 .Rproj.user/5568B3D5/sources/prop/245BB5A8
+ create mode 100644 .Rproj.user/5568B3D5/sources/prop/3E601537
+ create mode 100644 .Rproj.user/5568B3D5/sources/prop/706B6C43
+ create mode 100644 .Rproj.user/5568B3D5/sources/prop/722D8365
+ create mode 100644 .Rproj.user/5568B3D5/sources/prop/738D7D83
+ create mode 100644 .Rproj.user/5568B3D5/sources/prop/C7E37963
+ create mode 100644 .Rproj.user/5568B3D5/sources/prop/D332F272
+ create mode 100644 .Rproj.user/5568B3D5/sources/prop/E5178733
+ create mode 100644 .Rproj.user/5568B3D5/sources/prop/F1E51861
+ create mode 100644 .Rproj.user/5568B3D5/sources/prop/F7AC3CDE
+ create mode 100644 .Rproj.user/5568B3D5/sources/prop/INDEX
+ create mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/2759C9B4
+ create mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/2759C9B4-contents
+ create mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/3561B733
+ create mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/3561B733-contents
+ create mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/65D0F6B2
+ create mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/65D0F6B2-contents
+ create mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/74BA2C8D
+ create mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/74BA2C8D-contents
+ create mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/856B5849
+ create mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/856B5849-contents
+ create mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/8B27301B
+ create mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/8B27301B-contents
+ create mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/9489E1F
+ create mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/9489E1F-contents
+ create mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/A0E4072C
+ create mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/A0E4072C-contents
+ create mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/BD95C39F-contents
+ create mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/D16C728-contents
+ create mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/D4FB8E4F
+ create mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/D4FB8E4F-contents
+ create mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 .Rproj.user/shared/notebooks/paths
+ create mode 100644 DESCRIPTION
+ create mode 100644 NAMESPACE
+ create mode 100644 R/bipartplot.R
+ create mode 100644 R/datasets.R
+ create mode 100644 R/hello.R
+ create mode 100644 R/zelda.R
+ create mode 100644 data/bridges_from_ncomms15107.xlsx
+ create mode 100644 data/links
+ create mode 100644 data/ramilowski_links.RData
+ create mode 100644 data/receptor_ligand_bridges.csv
+ create mode 100644 man/bipartplot.Rd
+ create mode 100644 man/hello.Rd
+ create mode 100644 man/ramilowski_links.Rd
+ create mode 100644 man/zelda.Rd
+ create mode 100644 receptor_ligand_dataset_preparation.R
+ create mode 100644 zelda.Rproj
+]0;lubianat@csbl-tiago:~/Documents/Projects/main/zelda]7;file://csbl-tiago/home/lubianat/Documents/Projects/main/zelda]0;lubianat@csbl-tiago: ~/Documents/Projects/main/zelda[01;32mlubianat@csbl-tiago[00m:[01;34m~/Documents/Projects/main/zelda[00m$ A package to find links between two lists of genes. One of them hhas receptors, the other has ligands. This package makes the match.[A[36Pgit commit -m 'First commit'
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit remote add origin https://github.com/lubianat/zelda.git
+]0;lubianat@csbl-tiago:~/Documents/Projects/main/zelda]7;file://csbl-tiago/home/lubianat/Documents/Projects/main/zelda]0;lubianat@csbl-tiago: ~/Documents/Projects/main/zelda[01;32mlubianat@csbl-tiago[00m:[01;34m~/Documents/Projects/main/zelda[00m$ git remote add origin https://github.com/lubianat/zelda.git
+fatal: remote origin already exists.
+]0;lubianat@csbl-tiago:~/Documents/Projects/main/zelda]7;file://csbl-tiago/home/lubianat/Documents/Projects/main/zelda]0;lubianat@csbl-tiago: ~/Documents/Projects/main/zelda[01;32mlubianat@csbl-tiago[00m:[01;34m~/Documents/Projects/main/zelda[00m$ git push -u origin master
+fatal: cannot run rpostback-askpass: No such file or directory
+Username for 'https://github.com': lubianat
+fatal: cannot run rpostback-askpass: No such file or directory
+Password for 'https://lubianat@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/lubianat/zelda.git/'
+]0;lubianat@csbl-tiago:~/Documents/Projects/main/zelda]7;file://csbl-tiago/home/lubianat/Documents/Projects/main/zelda]0;lubianat@csbl-tiago: ~/Documents/Projects/main/zelda[01;32mlubianat@csbl-tiago[00m:[01;34m~/Documents/Projects/main/zelda[00m$ git push -u origin master
+fatal: cannot run rpostback-askpass: No such file or directory
+Username for 'https://github.com': lbuai    ubianat
+fatal: cannot run rpostback-askpass: No such file or directory
+Password for 'https://lubianat@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/lubianat/zelda.git/'
+]0;lubianat@csbl-tiago:~/Documents/Projects/main/zelda]7;file://csbl-tiago/home/lubianat/Documents/Projects/main/zelda]0;lubianat@csbl-tiago: ~/Documents/Projects/main/zelda[01;32mlubianat@csbl-tiago[00m:[01;34m~/Documents/Projects/main/zelda[00m$ git push -u origin master
+fatal: cannot run rpostback-askpass: No such file or directory
+Username for 'https://github.com': lubianat
+fatal: cannot run rpostback-askpass: No such file or directory
+Password for 'https://lubianat@github.com': 
+Counting objects: 58, done.
+Delta compression using up to 8 threads.
+Compressing objects:   1% (1/54)   Compressing objects:   3% (2/54)   Compressing objects:   5% (3/54)   Compressing objects:   7% (4/54)   Compressing objects:   9% (5/54)   Compressing objects:  11% (6/54)   Compressing objects:  12% (7/54)   Compressing objects:  14% (8/54)   Compressing objects:  16% (9/54)   Compressing objects:  18% (10/54)   Compressing objects:  20% (11/54)   Compressing objects:  22% (12/54)   Compressing objects:  24% (13/54)   Compressing objects:  25% (14/54)   Compressing objects:  27% (15/54)   Compressing objects:  29% (16/54)   Compressing objects:  31% (17/54)   Compressing objects:  33% (18/54)   Compressing objects:  35% (19/54)   Compressing objects:  37% (20/54)   Compressing objects:  38% (21/54)   Compressing objects:  40% (22/54)   Compressing objects:  42% (23/54)   Compressing objects:  44% (24/54)   Compressing objects:  46% (25/54)   Compressing objects:  48% (26/54)   Compressing objects:  50% (27/54)   Compressing objects:  51% (28/54)   Compressing objects:  53% (29/54)   Compressing objects:  55% (30/54)   Compressing objects:  57% (31/54)   Compressing objects:  59% (32/54)   Compressing objects:  61% (33/54)   Compressing objects:  62% (34/54)   Compressing objects:  64% (35/54)   Compressing objects:  66% (36/54)   Compressing objects:  68% (37/54)   Compressing objects:  70% (38/54)   Compressing objects:  72% (39/54)   Compressing objects:  74% (40/54)   Compressing objects:  75% (41/54)   Compressing objects:  77% (42/54)   Compressing objects:  79% (43/54)   Compressing objects:  81% (44/54)   Compressing objects:  83% (45/54)   Compressing objects:  85% (46/54)   Compressing objects:  87% (47/54)   Compressing objects:  88% (48/54)   Compressing objects:  90% (49/54)   Compressing objects:  92% (50/54)   Compressing objects:  94% (51/54)   Compressing objects:  96% (52/54)   Compressing objects:  98% (53/54)   Compressing objects: 100% (54/54)   Compressing objects: 100% (54/54), done.
+Writing objects:   1% (1/58)   Writing objects:   3% (2/58)   Writing objects:   5% (3/58)   Writing objects:   6% (4/58)   Writing objects:   8% (5/58)   Writing objects:  10% (6/58)   Writing objects:  12% (7/58)   Writing objects:  13% (8/58)   Writing objects:  15% (9/58)   Writing objects:  17% (10/58)   Writing objects:  18% (11/58)   Writing objects:  20% (12/58)   Writing objects:  22% (13/58)   Writing objects:  24% (14/58)   Writing objects:  25% (15/58)   Writing objects:  27% (16/58)   Writing objects:  29% (17/58)   Writing objects:  31% (18/58)   Writing objects:  32% (19/58)   Writing objects:  34% (20/58)   Writing objects:  36% (21/58)   Writing objects:  37% (22/58)   Writing objects:  39% (23/58)   Writing objects:  41% (24/58)   Writing objects:  43% (25/58)   Writing objects:  44% (26/58)   Writing objects:  50% (29/58)   Writing objects:  51% (30/58)   Writing objects:  53% (31/58)   Writing objects:  58% (34/58)   Writing objects:  60% (35/58)   Writing objects:  62% (36/58)   Writing objects:  63% (37/58)   Writing objects:  65% (38/58)   Writing objects:  67% (39/58)   Writing objects:  68% (40/58)   Writing objects:  70% (41/58)   Writing objects:  72% (42/58)   Writing objects:  74% (43/58)   Writing objects:  75% (44/58)   Writing objects:  77% (45/58)   Writing objects:  79% (46/58)   Writing objects:  81% (47/58)   Writing objects:  82% (48/58)   Writing objects:  84% (49/58)   Writing objects:  86% (50/58)   Writing objects:  87% (51/58)   Writing objects:  89% (52/58)   Writing objects:  91% (53/58)   Writing objects:  93% (54/58)   Writing objects:  94% (55/58)   Writing objects:  96% (56/58)   Writing objects:  98% (57/58)   Writing objects: 100% (58/58)   Writing objects: 100% (58/58), 624.03 KiB | 17.33 MiB/s, done.
+Total 58 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/6)   [Kremote: Resolving deltas:  50% (3/6)   [Kremote: Resolving deltas: 100% (6/6)   [Kremote: Resolving deltas: 100% (6/6), done.[K
+To https://github.com/lubianat/zelda.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+]0;lubianat@csbl-tiago:~/Documents/Projects/main/zelda]7;file://csbl-tiago/home/lubianat/Documents/Projects/main/zelda]0;lubianat@csbl-tiago: ~/Documents/Projects/main/zelda[01;32mlubianat@csbl-tiago[00m:[01;34m~/Documents/Projects/main/zelda[00m$ [K]0;lubianat@csbl-tiago: ~/Documents/Projects/main/zelda[01;32mlubianat@csbl-tiago[00m:[01;34m~/Documents/Projects/main/zelda[00m$ git add .

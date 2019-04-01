@@ -74,6 +74,11 @@ p <- ggplot(n, aes(x = x, y = y, xend = xend, yend = yend)) +
   theme_blank() +
   scale_color_manual(values = c("green", "blue"), name = "Class", labels = c("receptors","ligands")) +
   ggtitle('Ligand-Receptor Links')
-p
+if (return_ggplot ==FALSE){
+  plot(p)
+}else{
+  return(p)
+}
+
 }
 

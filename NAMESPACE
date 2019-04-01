@@ -2,7 +2,6 @@
 
 export(bipartplot)
 export(zelda)
-import(GGally)
 import(dplyr)
 import(ggnetwork)
 import(ggplot2)

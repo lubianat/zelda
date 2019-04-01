@@ -11,13 +11,15 @@
 #' @param plot_it Flag to plot bipartite network or not. Defaults to TRUE.
 #' @param return_links Flag to return a dataframe with the links object instead of plotting. Defaults to FALSE.
 #' @import dplyr
-#' @import ggnetwork
-#' @import igraph
-#' @import GGally
-#' @import network
-#' @import ggplot2
 #' @export
-
+#' @example
+#' data(degs)
+#' degs_alzheimer <- degs$degs_alzheimer
+#' degs_periodontitis <- degs$degs_periodontitis
+#' p <- zelda(receptors = degs_alzheimer, ligands = degs_periodontitis, return_ggplot = TRUE, plot_it = FALSE)
+#' p
+#' links <- p <- zelda(receptors = degs_alzheimer, ligands = degs_periodontitis, plot_it = FALSE, return_links = TRUE)
+#' head(links)
 
 zelda <- function(receptors, ligands, return_ggplot = FALSE, plot_it = TRUE, return_links = FALSE){
   if (return_ggplot == TRUE & return_links == TRUE ){
@@ -28,7 +30,6 @@ zelda <- function(receptors, ligands, return_ggplot = FALSE, plot_it = TRUE, ret
     stop("This function is doing nothing. Maybe you should set something to TRUE.")
   }
 
-  data(ramilowski_links)
   receptors <- unique(receptors)
   ligands <- unique(ligands)
   links <- ramilowski_links %>%

@@ -16,3 +16,19 @@ NULL
 #' Nature communications 6 (2015): 7866.
 #' \href{https://www.ncbi.nlm.nih.gov/pubmed/26198319}{PubMed}
 "ramilowski_links"
+
+
+
+#' Sample genes for example
+#'
+#' Sets of differentially expressed genes (DEGs) from two
+#' different studies: GSE110226 (Alzheimer's disease DEGs in the brain)
+#' and GSE61490(Chronic Periodontitis DEGs in monocytes)
+#'
+
+#' @name degs
+#' @docType data
+#' @usage data(degs)
+#' @format data frame
+#' @keywords degs
+"degs"

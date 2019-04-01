@@ -7,13 +7,13 @@
     "folds" : "",
     "hash" : "0",
     "id" : "74BA2C8D",
-    "lastKnownWriteTime" : 1553895621,
-    "last_content_update" : 1553895621569,
+    "lastKnownWriteTime" : 1554132534,
+    "last_content_update" : 1554132534789,
     "path" : "~/Documents/Projects/main/zelda/R/bipartplot.R",
     "project_path" : "R/bipartplot.R",
     "properties" : {
-        "cursorPosition" : "4,13",
-        "scrollLine" : "4"
+        "cursorPosition" : "56,39",
+        "scrollLine" : "40"
     },
     "relative_order" : 2,
     "source_on_save" : false,
