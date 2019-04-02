@@ -69,7 +69,7 @@ n$vertex.names[1:length(node_names)] <- node_names
 p <- ggplot(n, aes(x = x, y = y, xend = xend, yend = yend)) +
   geom_edges(color = "black") +
   geom_nodes(aes(color=family), size = 8, alpha=0.6) +
-  geom_nodetext(aes(label = vertex.names), data = n[1:15,]) +
+  geom_nodetext(aes(label = vertex.names), data = n[1:nrow(plotcord),]) +
   theme_blank() +
   scale_color_manual(values = c("green", "blue"), name = "Class", labels = c("receptors","ligands")) +
   ggtitle('Ligand-Receptor Links')
