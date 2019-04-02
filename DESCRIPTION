@@ -1,7 +1,7 @@
 Package: zelda
 Type: Package
 Title: Zelda finds Links 
-Version: 0.0.1
+Version: 0.0.2
 Author: Tiago Lubiana
 Maintainer: Tiago Lubiana <tiago.lubiana.alves@usp.br>
 Description: A package to find links between two lists of genes. One of them has receptors, the other has ligands. This package makes the match.

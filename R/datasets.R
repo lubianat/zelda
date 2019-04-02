@@ -34,16 +34,4 @@ NULL
 "degs"
 
 
-#' Simulation of zelda 100000 times
-#'
-#'A 100 000 simulation of randomly sampled genes from a 13000 gene pool to
-#' obtain estimates of links by random selection of genes.
-#' This estimate was done with two random lists of 1000 genes.
-#'
 
-#' @name kxk_simulation
-#' @docType data
-#' @usage data(kxk_simulation)
-#' @format Large numeric
-#' @keywords simulation
-"kxk_simulation"

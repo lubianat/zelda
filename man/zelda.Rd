@@ -23,3 +23,12 @@ Takes two lists of genes and finds the receptor-ligand relations (links) between
 Plots a bipartite plot of the found genes.
 Returns a bipartite network of the connections.
 }
+\examples{
+data(degs)
+degs_alzheimer <- degs$degs_alzheimer
+degs_periodontitis <- degs$degs_periodontitis
+p <- zelda(receptors = degs_alzheimer, ligands = degs_periodontitis, return_ggplot = TRUE, plot_it = FALSE)
+p
+links <- p <- zelda(receptors = degs_alzheimer, ligands = degs_periodontitis, plot_it = FALSE, return_links = TRUE)
+head(links)
+}

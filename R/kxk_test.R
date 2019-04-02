@@ -8,7 +8,7 @@
 #' @return Prints and estimate of the probability o
 #' @export
 #' @example
-#'bridge_kxk_test(15)
+#' zelda::kxk_test(15)
 
 kxk_test <- function(n){
   number_of_links <- kxk_simulation

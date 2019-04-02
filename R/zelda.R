@@ -12,7 +12,7 @@
 #' @param return_links Flag to return a dataframe with the links object instead of plotting. Defaults to FALSE.
 #' @import dplyr
 #' @export
-#' @example
+#' @examples
 #' data(degs)
 #' degs_alzheimer <- degs$degs_alzheimer
 #' degs_periodontitis <- degs$degs_periodontitis
