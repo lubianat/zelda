@@ -189,3 +189,16 @@ remote: Resolving deltas:   0% (0/7)   [Kremote: Resolving deltas:  14% (1/7) 
 To github.com:lubianat/zelda.git
    06572d5..88b8c11  master -> master
 ]0;lubianat@csbl-tiago:~/Documents/Projects/main/zelda]7;file://csbl-tiago/home/lubianat/Documents/Projects/main/zelda]0;lubianat@csbl-tiago: ~/Documents/Projects/main/zelda[01;32mlubianat@csbl-tiago[00m:[01;34m~/Documents/Projects/main/zelda[00m$ gt[Kit add .
+]0;lubianat@csbl-tiago:~/Documents/Projects/main/zelda]7;file://csbl-tiago/home/lubianat/Documents/Projects/main/zelda]0;lubianat@csbl-tiago: ~/Documents/Projects/main/zelda[01;32mlubianat@csbl-tiago[00m:[01;34m~/Documents/Projects/main/zelda[00m$ f[Kgit commit -m 'Debugging'
+[master 287e3cb] Debugging
+ 6 files changed, 23 insertions(+), 8 deletions(-)
+]0;lubianat@csbl-tiago:~/Documents/Projects/main/zelda]7;file://csbl-tiago/home/lubianat/Documents/Projects/main/zelda]0;lubianat@csbl-tiago: ~/Documents/Projects/main/zelda[01;32mlubianat@csbl-tiago[00m:[01;34m~/Documents/Projects/main/zelda[00m$ git push
+Counting objects: 14, done.
+Delta compression using up to 8 threads.
+Compressing objects:   7% (1/13)   Compressing objects:  15% (2/13)   Compressing objects:  23% (3/13)   Compressing objects:  30% (4/13)   Compressing objects:  38% (5/13)   Compressing objects:  46% (6/13)   Compressing objects:  53% (7/13)   Compressing objects:  61% (8/13)   Compressing objects:  69% (9/13)   Compressing objects:  76% (10/13)   Compressing objects:  84% (11/13)   Compressing objects:  92% (12/13)   Compressing objects: 100% (13/13)   Compressing objects: 100% (13/13), done.
+Writing objects:   7% (1/14)   Writing objects:  14% (2/14)   Writing objects:  21% (3/14)   Writing objects:  28% (4/14)   Writing objects:  35% (5/14)   Writing objects:  42% (6/14)   Writing objects:  50% (7/14)   Writing objects:  57% (8/14)   Writing objects:  64% (9/14)   Writing objects:  71% (10/14)   Writing objects:  78% (11/14)   Writing objects:  85% (12/14)   Writing objects:  92% (13/14)   Writing objects: 100% (14/14)   Writing objects: 100% (14/14), 1.51 KiB | 1.51 MiB/s, done.
+Total 14 (delta 7), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/7)   [Kremote: Resolving deltas:  14% (1/7)   [Kremote: Resolving deltas:  28% (2/7)   [Kremote: Resolving deltas:  42% (3/7)   [Kremote: Resolving deltas:  57% (4/7)   [Kremote: Resolving deltas:  71% (5/7)   [Kremote: Resolving deltas:  85% (6/7)   [Kremote: Resolving deltas: 100% (7/7)   [Kremote: Resolving deltas: 100% (7/7), completed with 7 local objects.[K
+To github.com:lubianat/zelda.git
+   88b8c11..287e3cb  master -> master
+]0;lubianat@csbl-tiago:~/Documents/Projects/main/zelda]7;file://csbl-tiago/home/lubianat/Documents/Projects/main/zelda]0;lubianat@csbl-tiago: ~/Documents/Projects/main/zelda[01;32mlubianat@csbl-tiago[00m:[01;34m~/Documents/Projects/main/zelda[00m$ GIT A[K[K[K[K[KGit [K[K[K[Kgit add .

@@ -18,7 +18,15 @@ edgelist <- as.matrix(edgelist)
 r <- edgelist[,1]
 l <- edgelist[,2]
 g <- igraph::graph_from_edgelist(edgelist)
-
+if(nrow(edgelist) == 1){
+  message('ggplot not available for 1 edge graphs in this version')
+  if (return_ggplot ==FALSE){
+    plot(g)
+    return(NULL)
+  }else{
+    stop('ggplot not available for 1 edge graphs in this version')
+  }
+}
 
 adj <- as.matrix(get.adjacency(g))
 adj <- adj[rowSums(adj[,-1]) != 0,]
