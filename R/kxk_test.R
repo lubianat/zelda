@@ -12,7 +12,6 @@
 
 kxk_test <- function(n){
   data("kxk_simulation")
-  number_of_links <- kxk_simulation
   p_value <- sum(number_of_links >= n)/length(number_of_links)
   print( paste0('The estimated p-value (probability of occurrence of a equal or more extreme value under the null) for ', n, ' links is of ', p_value, '.') )
 }
