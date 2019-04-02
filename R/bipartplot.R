@@ -13,9 +13,12 @@
 #' @export
 
 bipartplot <- function(edgelist,return_ggplot =FALSE){
+edgelist <- as.matrix(edgelist)
+
 r <- edgelist[,1]
 l <- edgelist[,2]
 g <- igraph::graph_from_edgelist(edgelist)
+
 
 adj <- as.matrix(get.adjacency(g))
 adj <- adj[rowSums(adj[,-1]) != 0,]
@@ -70,6 +73,7 @@ p <- ggplot(n, aes(x = x, y = y, xend = xend, yend = yend)) +
   theme_blank() +
   scale_color_manual(values = c("green", "blue"), name = "Class", labels = c("receptors","ligands")) +
   ggtitle('Ligand-Receptor Links')
+
 if (return_ggplot ==FALSE){
   plot(p)
 }else{

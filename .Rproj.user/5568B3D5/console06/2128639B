@@ -133,3 +133,45 @@ remote: Resolving deltas:   0% (0/15)   [Kremote: Resolving deltas:   6% (1/15
 To github.com:lubianat/zelda.git
    70d6588..69a66ff  master -> master
 [K]0;lubianat@csbl-tiago: ~/Documents/Projects/main/zelda[01;32mlubianat@csbl-tiago[00m:[01;34m~/Documents/Projects/main/zelda[00m$ GIT [K[K[K[Kgit add .
+]0;lubianat@csbl-tiago:~/Documents/Projects/main/zelda]7;file://csbl-tiago/home/lubianat/Documents/Projects/main/zelda]0;lubianat@csbl-tiago: ~/Documents/Projects/main/zelda[01;32mlubianat@csbl-tiago[00m:[01;34m~/Documents/Projects/main/zelda[00m$ git commit -'[KV[KM '[K[K[Km 'Message for whe n no k[Klinks are found'
+[master 06572d5] Message for when no links are found
+ 37 files changed, 55 insertions(+), 681 deletions(-)
+ rewrite .Rproj.user/5568B3D5/console06/INDEX001 (72%)
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/2759C9B4
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/2759C9B4-contents
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/3561B733
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/3561B733-contents
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/64C34A1E
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/64C34A1E-contents
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/65D0F6B2
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/65D0F6B2-contents
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/74BA2C8D
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/74BA2C8D-contents
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/856B5849
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/856B5849-contents
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/8B27301B
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/8B27301B-contents
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/9489E1F
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/9489E1F-contents
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/A0E4072C
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/A0E4072C-contents
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/B4D7C9CD
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/B4D7C9CD-contents
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/BD95C39F-contents
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/C970003F
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/C970003F-contents
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/D16C728-contents
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/D4FB8E4F
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/D4FB8E4F-contents
+ delete mode 100644 .Rproj.user/5568B3D5/sources/s-1C5815/lock_file
+ create mode 100644 .gitignore
+]0;lubianat@csbl-tiago:~/Documents/Projects/main/zelda]7;file://csbl-tiago/home/lubianat/Documents/Projects/main/zelda]0;lubianat@csbl-tiago: ~/Documents/Projects/main/zelda[01;32mlubianat@csbl-tiago[00m:[01;34m~/Documents/Projects/main/zelda[00m$ git push
+Counting objects: 19, done.
+Delta compression using up to 8 threads.
+Compressing objects:   6% (1/16)   Compressing objects:  12% (2/16)   Compressing objects:  18% (3/16)   Compressing objects:  25% (4/16)   Compressing objects:  31% (5/16)   Compressing objects:  37% (6/16)   Compressing objects:  43% (7/16)   Compressing objects:  50% (8/16)   Compressing objects:  56% (9/16)   Compressing objects:  62% (10/16)   Compressing objects:  68% (11/16)   Compressing objects:  75% (12/16)   Compressing objects:  81% (13/16)   Compressing objects:  87% (14/16)   Compressing objects:  93% (15/16)   Compressing objects: 100% (16/16)   Compressing objects: 100% (16/16), done.
+Writing objects:   5% (1/19)   Writing objects:  10% (2/19)   Writing objects:  15% (3/19)   Writing objects:  21% (4/19)   Writing objects:  26% (5/19)   Writing objects:  31% (6/19)   Writing objects:  36% (7/19)   Writing objects:  42% (8/19)   Writing objects:  47% (9/19)   Writing objects:  52% (10/19)   Writing objects:  57% (11/19)   Writing objects:  63% (12/19)   Writing objects:  68% (13/19)   Writing objects:  73% (14/19)   Writing objects:  78% (15/19)   Writing objects:  84% (16/19)   Writing objects:  89% (17/19)   Writing objects:  94% (18/19)   Writing objects: 100% (19/19)   Writing objects: 100% (19/19), 2.82 KiB | 576.00 KiB/s, done.
+Total 19 (delta 8), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/8)   [Kremote: Resolving deltas:  12% (1/8)   [Kremote: Resolving deltas:  25% (2/8)   [Kremote: Resolving deltas:  37% (3/8)   [Kremote: Resolving deltas:  50% (4/8)   [Kremote: Resolving deltas:  62% (5/8)   [Kremote: Resolving deltas:  75% (6/8)   [Kremote: Resolving deltas:  87% (7/8)   [Kremote: Resolving deltas: 100% (8/8)   [Kremote: Resolving deltas: 100% (8/8), completed with 8 local objects.[K
+To github.com:lubianat/zelda.git
+   69a66ff..06572d5  master -> master
+gita dd[K[K[K[K add .
