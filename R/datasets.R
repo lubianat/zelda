@@ -18,6 +18,20 @@ NULL
 "ramilowski_links"
 
 
+#' Ligand-receptor interaction dataframe
+#'
+#' Dataframe of ligand-receptor interactions curated by Teichmann et al
+#' https://www.cellphonedb.org/
+#'
+#' @name cellphone_db_links
+#' @docType data
+#' @usage data(ramilowski_links)
+#' @format data frame
+#' @keywords datasets, links, cellphone
+#' \href{https://www.cellphonedb.org/}
+"cellphone_db_links"
+
+
 
 #' Sample genes for example
 #'
