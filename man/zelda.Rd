@@ -4,13 +4,16 @@
 \alias{zelda}
 \title{zelda}
 \usage{
-zelda(receptors, ligands, return_ggplot = FALSE, plot_it = TRUE,
-  return_links = FALSE)
+zelda(receptors, ligands, database = "ramilowski_links",
+  return_ggplot = FALSE, plot_it = TRUE, return_links = FALSE)
 }
 \arguments{
 \item{receptors}{A list of genes containing putative receptors}
 
 \item{ligands}{A list of genes containg putative ligands}
+
+\item{database}{The database to be used to find the links. Defaults to "ramilowski_links".
+Other options: "cellphone_db_links"}
 
 \item{return_ggplot}{Flag to return a ggplot2 object instead of plotting. Defaults to FALSE.}
 
