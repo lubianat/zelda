@@ -17,6 +17,7 @@
 #' Other options: "cellphone_db_links"; "all"
 #' @import dplyr
 #' @import ggplot2
+#' @return Returns a dataframe with the lists found in the databases.
 #' @export
 #' @examples
 #'
@@ -136,14 +137,15 @@ set_ggnetwork_node_names <- function(ggnetwork_data_frame, node_names){
 #' @import igraph
 #' @import network
 #' @import ggplot2
+#' @importFrom graphics plot
+#' @importFrom stats family
+#' @return Returns a ggplot2 object, either plotting directly or as a list.
 #' @export
 #' @examples
 #'  receptor_candidates <- c("CD3", "AIF", "CCR3", "CXCR3")
 #'  ligand_candidates <- c("TP53", "NFKB1", "CXCL9")
 #'  links <-
-#'    return_links(receptors = receptor_candidates,
-#'                 ligands = ligand_candidates,
-#'                 database = "all")
+#'  return_links(receptor_candidates, ligand_candidates, "all")
 #'  head(links)
 #'
 #'  plot_links(links)

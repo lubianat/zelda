@@ -20,6 +20,9 @@ Other options: "cellphone_db_links"; "all"}
 
 \item{return_links}{Flag to return a dataframe with the links object instead of plotting. Defaults to FALSE.}
 }
+\value{
+Returns a dataframe with the lists found in the databases.
+}
 \description{
 Takes two lists of genes and finds the receptor-ligand relations (links) between them.
 Plots a bipartite plot of the found genes.

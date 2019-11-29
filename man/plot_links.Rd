@@ -11,6 +11,9 @@ plot_links(edgelist, return_ggplot = FALSE)
 
 \item{return_ggplot}{Flag to return a ggplot2 object instead of plotting}
 }
+\value{
+Returns a ggplot2 object, either plotting directly or as a list.
+}
 \description{
 Takes an edge list (from a bipartite network)
 And plots a railway bipartite plot using ggplot2
@@ -23,9 +26,7 @@ Only the first two columns of the edgelist are used
  receptor_candidates <- c("CD3", "AIF", "CCR3", "CXCR3")
  ligand_candidates <- c("TP53", "NFKB1", "CXCL9")
  links <-
-   return_links(receptors = receptor_candidates,
-                ligands = ligand_candidates,
-                database = "all")
+ return_links(receptor_candidates, ligand_candidates, "all")
  head(links)
 
  plot_links(links)
