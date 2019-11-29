@@ -30,22 +30,3 @@ NULL
 #' @keywords datasets, links, cellphone
 #' \href{https://www.cellphonedb.org/}
 "cellphone_db_links"
-
-
-
-#' Sample genes for example
-#'
-#' Sets of differentially expressed genes (DEGs) from two
-#' different studies: GSE110226 (Alzheimer's disease DEGs in the brain)
-#' and GSE61490(Chronic Periodontitis DEGs in monocytes)
-#'
-
-#' @name degs
-#' @docType data
-#' @usage data(degs)
-#' @format data frame
-#' @keywords degs
-"degs"
-
-
-

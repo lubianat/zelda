@@ -16,12 +16,12 @@
 #' @import ggplot2
 #' @export
 #' @examples
-#' data(degs)
-#' degs_alzheimer <- degs$degs_alzheimer
-#' degs_periodontitis <- degs$degs_periodontitis
-#' p <- zelda(receptors = degs_alzheimer, ligands = degs_periodontitis, return_ggplot = TRUE, plot_it = FALSE)
+#'
+#' receptor_candidates <- c("CD3", "AIF", "CCR3", "CXCR3")
+#' ligand_candidates <- c("TP53", "NFKB1", "CXCL9")
+#' p <- zelda(receptors = receptor_candidates, ligands = ligand_candidates, return_ggplot = TRUE, plot_it = FALSE)
 #' p
-#' links <- p <- zelda(receptors = degs_alzheimer, ligands = degs_periodontitis, plot_it = FALSE, return_links = TRUE)
+#' links <- zelda(receptors = receptor_candidates, ligands = receptor_candidates, plot_it = FALSE, return_links = TRUE)
 #' head(links)
 
 zelda <- function(receptors, ligands, database = "ramilowski_links", return_ggplot = FALSE, plot_it = TRUE, return_links = FALSE){
@@ -36,10 +36,12 @@ zelda <- function(receptors, ligands, database = "ramilowski_links", return_ggpl
   receptors <- unique(receptors)
   ligands <- unique(ligands)
   if (database == "ramilowski_links"){
+    data(ramilowski_links)
     links <- ramilowski_links %>%
       filter(Receptor.ApprovedSymbol %in% receptors & Ligand.ApprovedSymbol %in% ligands )
   }
   if (database == 'cellphone_db_links'){
+    data(cellphone_db_links)
     links <- cellphone_db_links[cellphone_db_links$receptors %in% receptors & cellphone_db_links$ligands %in% ligands, ]
   }
   if (database == "all"){
