@@ -4,7 +4,7 @@ Title: Zelda finds Links
 Version: 0.0.2
 Author: Tiago Lubiana
 Maintainer: Tiago Lubiana <tiago.lubiana.alves@usp.br>
-Description: A package to find links between two lists of genes. One of them has receptors, the other has ligands. This package makes the match.
+Description: A package to find links between two lists of genes. One of them has receptors, the other has ligands. This package makes the match. Zelda uses datasets from two different publications. If you use it in your analysis, please cite the original publications. For the "ramilowski_links" dataset please cite "Ramilowski, Jordan A., et al. "A draft network of ligand–receptor-mediated multicellular signalling in human." Nature communications 6 (2015): 7866." For the "cellphone_db_links" dataset please cite "Efremova, Mirjana, et al. "CellPhoneDB v2. 0: Inferring cell-cell communication from combined expression of multi-subunit receptor-ligand complexes." bioRxiv (2019): 680926."
 License: MIT + file LICENSE
 Imports: dplyr, ggplot2, igraph, network
 Encoding: UTF-8
