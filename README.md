@@ -83,5 +83,4 @@ Database of Ligand-Receptor Partners (DLRP), IUPHAR and Human Plasma Membrane Re
 
 * [https://www.biorxiv.org/content/10.1101/680926v1](Efremova, Mirjana, et al. "CellPhoneDB v2. 0: Inferring cell-cell communication from combined expression of multi-subunit receptor-ligand complexes." bioRxiv (2019): 680926)
 
-
 * In [https://www.biorxiv.org/content/biorxiv/early/2019/01/04/507871.full.pdf](iTALK: an R Package to Characterize and Illustrate Intercellular Communication ) they build on previous databases to build a curated, R-available list of ligand-receptor interactions. 
