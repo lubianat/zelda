@@ -3,6 +3,13 @@
 A package to find links between two lists of genes. One of them has receptors, the other has ligands. This package makes the match.
 
 
+# Citation
+
+Zelda uses datasets from two different publications. If you use it in your analysis, please cite the original publications. 
+
+For the "ramilowski_links" dataset please cite "Ramilowski, Jordan A., et al. "A draft network of ligand–receptor-mediated multicellular signalling in human." Nature communications 6 (2015): 7866." 
+
+For the "cellphone_db_links" dataset please cite "Efremova, Mirjana, et al. "CellPhoneDB v2. 0: Inferring cell-cell communication from combined expression of multi-subunit receptor-ligand complexes." bioRxiv (2019): 680926."
 
 # Dataset preparation 
 ```
