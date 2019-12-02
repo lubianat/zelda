@@ -11,7 +11,12 @@ For the "ramilowski_links" dataset please cite "Ramilowski, Jordan A., et al. "A
 
 For the "cellphone_db_links" dataset please cite "Efremova, Mirjana, et al. "CellPhoneDB v2. 0: Inferring cell-cell communication from combined expression of multi-subunit receptor-ligand complexes." bioRxiv (2019): 680926."
 
+
+
+
+
 # Dataset preparation 
+
 ```
 library(biomaRt)
 library(readxl)
@@ -47,3 +52,36 @@ cellphone_db_links$receptors <- uniprot_to_gene_symbol$hgnc_symbol[match(cellpho
 save('cellphone_db_links', file = './data/cellphone_db_links.RData')
 
 ```
+
+
+#  List of works that use receptor-ligand databases 
+
+### Applying databases
+
+Database of Ligand-Receptor Partners (DLRP), IUPHAR and Human Plasma Membrane Receptome (HPMR) are included via Ramilowski db.,  but only until 2015. 
+
+* In [https://www.sciencedirect.com/science/article/pii/S221112471831636X?via%3Dihub#bib33](Kumar, M. P. et al. Analysis of Single-Cell RNA-Seq Identifies Cell-Cell Communication Associated with Tumor Characteristics. Cell Rep. 25, 1458–1468.e4 (2018)), they use the Ramilowski db with addition of known B7 family member interactions from Southan et al., 2016.
+
+
+* In [https://www.ncbi.nlm.nih.gov/pubmed/25704820](Transcriptome Analysis of Individual Stromal CellPopulations Identifies Stroma-Tumor Crosstalk in Mouse Lung Cancer Model) they claim to have established a database of 1433 interactions, but I was not able to find it anywhere. 
+
+
+*  In [https://www.nature.com/articles/nature22796](Camp, J. G. et al. Multilineage communication regulates human liver bud development from pluripotency. Nature 546, 533–538 (2017).) they use the database by Ramilowski et al.
+
+*  In [https://www.sciencedirect.com/science/article/pii/S2211124718315043?via%3Dihub](Joost, S. et al. Single-Cell Transcriptomics of Traced Epidermal and Hair Follicle Stem Cells Reveals Rapid Adaptations during Wound Healing. Cell Rep. 25, 585–597.e7 (2018).) they use the database by Ramilowski et al.
+
+* In [https://www.nature.com/articles/s41592-018-0009-z#Sec8](Boisset, J.-C. et al. Mapping the physical network of cellular interactions. Nat. Methods 15, 547–553 (2018).
+19.) they do not use receptor-ligand information to infer cell-cell interaction (but by its title, it could have been the case)
+
+
+### Describing databases 
+
+* [https://doi.org/10.1093/nar/gkv1037](The IUPHAR/BPS Guide to PHARMACOLOGY in 2016: towards curated quantitative interactions between 1300 protein targets and 6000 ligands)
+(Southan et al, Nucleic Acids Research, Volume 44, Issue D1, 4 January 2016)
+
+* [https://www.nature.com/articles/ncomms8866](Ramilowski, Jordan A., et al. "A draft network of ligand–receptor-mediated multicellular signalling in human." Nature communications 6 (2015): 7866.)
+
+* [https://www.biorxiv.org/content/10.1101/680926v1](Efremova, Mirjana, et al. "CellPhoneDB v2. 0: Inferring cell-cell communication from combined expression of multi-subunit receptor-ligand complexes." bioRxiv (2019): 680926)
+
+
+* In [https://www.biorxiv.org/content/biorxiv/early/2019/01/04/507871.full.pdf](iTALK: an R Package to Characterize and Illustrate Intercellular Communication ) they build on previous databases to build a curated, R-available list of ligand-receptor interactions. 
