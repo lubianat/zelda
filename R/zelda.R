@@ -2,17 +2,14 @@
 
 
 ###### Return links ########
-#' zelda
+#' return_links
 #'
-#' Takes two lists of genes and finds the receptor-ligand relations (links) between them.
+#' zelda Takes two lists of genes and finds the receptor-ligand relations (links) between them.
 #' Plots a bipartite plot of the found genes.
 #' Returns a bipartite network of the connections.
 #'
 #' @param receptors A list of genes containing putative receptors
 #' @param ligands A list of genes containg putative ligands
-#' @param return_ggplot Flag to return a ggplot2 object instead of plotting. Defaults to FALSE.
-#' @param plot_it Flag to plot bipartite network or not. Defaults to TRUE.
-#' @param return_links Flag to return a dataframe with the links object instead of plotting. Defaults to FALSE.
 #' @param database The database to be used to find the links. Defaults to "ramilowski_links".
 #' Other options: "cellphone_db_links"; "all"
 #' @import dplyr
@@ -23,7 +20,7 @@
 #'
 #'  receptor_candidates <- c("CD3", "AIF", "CCR3", "CXCR3")
 #'  ligand_candidates <- c("TP53", "NFKB1", "CXCL9")
-#'  links <- return_links(receptors = receptor_candidates, ligands = ligand_candidates, database = "all")
+#'  links <- return_links(receptor_candidates, ligand_candidates, database = "all")
 #'  head(links)
 
 return_links <-
@@ -85,45 +82,6 @@ add_types_to_graph <- function(graph_object) {
   return(g)
 }
 
-override_ggnetwork_layout <-
-  function(ggnetwork_data_frame,
-           igraph_plot_coordinates,
-           igraph_plot_coordinates_as_edges
-  ) {
-    # add coordinates to ggnetwork generated data frame
-    ggnetwork_data_frame[is.na(ggnetwork_data_frame$na.y), ]$x <-
-      igraph_plot_coordinates$X1
-    ggnetwork_data_frame[is.na(ggnetwork_data_frame$na.y), ]$xend <-
-      igraph_plot_coordinates$X1
-    ggnetwork_data_frame[is.na(ggnetwork_data_frame$na.y), ]$y <-
-      igraph_plot_coordinates$X2
-    ggnetwork_data_frame[is.na(ggnetwork_data_frame$na.y), ]$yend <-
-      igraph_plot_coordinates$X2
-
-    ggnetwork_data_frame[!is.na(ggnetwork_data_frame$na.y), ]$x <-
-      igraph_plot_coordinates_as_edges$X1
-    ggnetwork_data_frame[!is.na(ggnetwork_data_frame$na.y), ]$xend <-
-      igraph_plot_coordinates_as_edges$X2
-    ggnetwork_data_frame[!is.na(ggnetwork_data_frame$na.y), ]$y <-
-      igraph_plot_coordinates_as_edges$Y1
-    ggnetwork_data_frame[!is.na(ggnetwork_data_frame$na.y), ]$yend <-
-      igraph_plot_coordinates_as_edges$Y2
-
-    return(ggnetwork_data_frame)
-
-  }
-
-set_ggnetwork_node_names <- function(ggnetwork_data_frame, node_names){
-  node_names_df <- data.frame(vertex.names = seq_along(node_names), node_names)
-  ggnetwork_data_frame <- left_join(ggnetwork_data_frame, node_names_df)
-  ggnetwork_data_frame$vertex.names <- ggnetwork_data_frame$node_names
-  ggnetwork_data_frame$node_names <- NULL
-
-  return(ggnetwork_data_frame)
-}
-
-
-
 #' plot_links
 #'
 #' Takes an edge list (from a bipartite network)
@@ -134,9 +92,9 @@ set_ggnetwork_node_names <- function(ggnetwork_data_frame, node_names){
 #'
 #' @param edgelist The edgelist corresponding to the bipartite network
 #' @param return_ggplot Flag to return a ggplot2 object instead of plotting
-#' @import igraph
-#' @import network
 #' @import ggplot2
+#' @import ggthemes
+#' @importFrom igraph graph_from_edgelist get.edgelist layout_as_bipartite get.adjacency graph.incidence
 #' @importFrom graphics plot
 #' @importFrom stats family
 #' @return Returns a ggplot2 object, either plotting directly or as a list.
@@ -194,7 +152,7 @@ plot_links <- function(edgelist, return_ggplot = FALSE) {
     geom_label(aes_(x=~X1, y=~X2, label =~label, colour =~groups)) +
     scale_alpha(guide = "none") +
     scale_size(guide = "none") +
-    theme_blank() +
+    theme_void() +
     labs(title="Receptors and ligands")
 
   p

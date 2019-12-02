@@ -2,7 +2,7 @@
 % Please edit documentation in R/zelda.R
 \name{return_links}
 \alias{return_links}
-\title{zelda}
+\title{return_links}
 \usage{
 return_links(receptors, ligands, database = "ramilowski_links")
 }
@@ -13,18 +13,12 @@ return_links(receptors, ligands, database = "ramilowski_links")
 
 \item{database}{The database to be used to find the links. Defaults to "ramilowski_links".
 Other options: "cellphone_db_links"; "all"}
-
-\item{return_ggplot}{Flag to return a ggplot2 object instead of plotting. Defaults to FALSE.}
-
-\item{plot_it}{Flag to plot bipartite network or not. Defaults to TRUE.}
-
-\item{return_links}{Flag to return a dataframe with the links object instead of plotting. Defaults to FALSE.}
 }
 \value{
 Returns a dataframe with the lists found in the databases.
 }
 \description{
-Takes two lists of genes and finds the receptor-ligand relations (links) between them.
+zelda Takes two lists of genes and finds the receptor-ligand relations (links) between them.
 Plots a bipartite plot of the found genes.
 Returns a bipartite network of the connections.
 }
@@ -32,6 +26,6 @@ Returns a bipartite network of the connections.
 
  receptor_candidates <- c("CD3", "AIF", "CCR3", "CXCR3")
  ligand_candidates <- c("TP53", "NFKB1", "CXCL9")
- links <- return_links(receptors = receptor_candidates, ligands = ligand_candidates, database = "all")
+ links <- return_links(receptor_candidates, ligand_candidates, database = "all")
  head(links)
 }

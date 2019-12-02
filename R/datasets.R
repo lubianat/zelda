@@ -27,6 +27,4 @@ NULL
 #' @docType data
 #' @usage data(ramilowski_links)
 #' @format data frame
-#' @keywords datasets, links, cellphone
-#' \href{https://www.cellphonedb.org/}
 "cellphone_db_links"

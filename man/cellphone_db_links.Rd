@@ -12,7 +12,4 @@ data(ramilowski_links)
 Dataframe of ligand-receptor interactions curated by Teichmann et al
 https://www.cellphonedb.org/
 }
-\keyword{\href{https://www.cellphonedb.org/}}
-\keyword{cellphone}
-\keyword{datasets,}
-\keyword{links,}
+\keyword{datasets}
